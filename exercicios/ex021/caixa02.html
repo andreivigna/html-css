@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grouping tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      nav {
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+        box-shadow: 2px 2px 2px black;
+        /*pode utilizar o dev tools */
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        /*arredondar a borda, pode utilizar o dev tools*/
+      }
+      article {
+        background-color: lightgray;
+        padding: 5px;
+      }
+      article > aside {
+        background-color: rgb(165, 165, 165);
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+      }
+      footer > p {
+        margin: 0px;
+      }
+
+      div#bola {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>new site</h1>
+      <nav>
+        <a href="http://">link</a>
+        <a href="http://">link</a>
+        <a href="http://">link</a>
+        <a href="http://">link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>esportes politica tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>noticia sobre o brasil</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit suscipit a odio ea qui libero, voluptatem possimus
+            officiis recusandae rerum sapiente obcaecati quos veritatis sint
+            animi consequatur quas delectus accusamus.
+          </p>
+          <aside>
+            <p>artigo escrito por jose da silva</p>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>desenvolvido por andrei vigna</p>
+    </footer>
+    <div id="bola"></div>
+  </body>
+</html>
