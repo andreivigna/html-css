@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabelas grandes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+      thead,
+      tfoot {
+        background-color: gray;
+        color: white;
+      }
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+      }
+      tbody > tr:nth-child(odd) /*even 2n*/ {
+        background-color: lightgray;
+      }
+      tbody > tr:nth-child(even) /*even 2n*/ {
+        background-color: lightslategrey;
+      }
+      td.num {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>uso de tabelas grandes</h1>
+    <!--
+        anatomia -
+        CAption
+        thead / tbody / tfoot (tr td th)
+    -->
+    <table>
+      <caption>
+        população das unidades federativas
+      </caption>
+      <thead>
+        <th scope="col">estado</th>
+        <th scope="col" style="width: 90px">população</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+        <tr>
+          <td>sao paulo</td>
+          <td class="num">45 919 545</td>
+        </tr>
+        <tr>
+          <td>rio de janeiro</td>
+          <td class="num">37 919 545</td>
+        </tr>
+        <tr>
+          <td>minas gerais</td>
+          <td class="num">22 919 545</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row">total de habitantes</th>
+          <td><strong>154 452 452</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta
+      accusamus alias, incidunt atque est quae harum debitis delectus
+      asperiores, nostrum eum temporibus quo ex. Itaque voluptatem ab
+      repudiandae fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Inventore itaque voluptatem atque nam, eveniet quisquam ipsa
+      officiis veniam? Consequatur eius atque natus at soluta culpa
+      necessitatibus maiores non sit recusandae! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odit doloribus omnis harum, ratione
+      voluptates fugiat voluptatum vel eaque molestiae dolorem delectus nobis,
+      odio mollitia autem natus perferendis ab soluta voluptas? Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Nulla, exercitationem itaque
+      culpa ea ab assumenda beatae, ipsam sequi eveniet veritatis consectetur
+      fugiat repellendus distinctio, dolorum aspernatur incidunt eos porro
+      laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. A id
+      maiores laborum quasi minus, modi eligendi rerum earum, rem non impedit
+      fugit, enim animi fuga ratione perspiciatis! Pariatur, perferendis
+      voluptate.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta
+      accusamus alias, incidunt atque est quae harum debitis delectus
+      asperiores, nostrum eum temporibus quo ex. Itaque voluptatem ab
+      repudiandae fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Inventore itaque voluptatem atque nam, eveniet quisquam ipsa
+      officiis veniam? Consequatur eius atque natus at soluta culpa
+      necessitatibus maiores non sit recusandae! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odit doloribus omnis harum, ratione
+      voluptates fugiat voluptatum vel eaque molestiae dolorem delectus nobis,
+      odio mollitia autem natus perferendis ab soluta voluptas? Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Nulla, exercitationem itaque
+      culpa ea ab assumenda beatae, ipsam sequi eveniet veritatis consectetur
+      fugiat repellendus distinctio, dolorum aspernatur incidunt eos porro
+      laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. A id
+      maiores laborum quasi minus, modi eligendi rerum earum, rem non impedit
+      fugit, enim animi fuga ratione perspiciatis! Pariatur, perferendis
+      voluptate.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta
+      accusamus alias, incidunt atque est quae harum debitis delectus
+      asperiores, nostrum eum temporibus quo ex. Itaque voluptatem ab
+      repudiandae fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Inventore itaque voluptatem atque nam, eveniet quisquam ipsa
+      officiis veniam? Consequatur eius atque natus at soluta culpa
+      necessitatibus maiores non sit recusandae! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odit doloribus omnis harum, ratione
+      voluptates fugiat voluptatum vel eaque molestiae dolorem delectus nobis,
+      odio mollitia autem natus perferendis ab soluta voluptas? Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Nulla, exercitationem itaque
+      culpa ea ab assumenda beatae, ipsam sequi eveniet veritatis consectetur
+      fugiat repellendus distinctio, dolorum aspernatur incidunt eos porro
+      laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. A id
+      maiores laborum quasi minus, modi eligendi rerum earum, rem non impedit
+      fugit, enim animi fuga ratione perspiciatis! Pariatur, perferendis
+      voluptate.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta
+      accusamus alias, incidunt atque est quae harum debitis delectus
+      asperiores, nostrum eum temporibus quo ex. Itaque voluptatem ab
+      repudiandae fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Inventore itaque voluptatem atque nam, eveniet quisquam ipsa
+      officiis veniam? Consequatur eius atque natus at soluta culpa
+      necessitatibus maiores non sit recusandae! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odit doloribus omnis harum, ratione
+      voluptates fugiat voluptatum vel eaque molestiae dolorem delectus nobis,
+      odio mollitia autem natus perferendis ab soluta voluptas? Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Nulla, exercitationem itaque
+      culpa ea ab assumenda beatae, ipsam sequi eveniet veritatis consectetur
+      fugiat repellendus distinctio, dolorum aspernatur incidunt eos porro
+      laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. A id
+      maiores laborum quasi minus, modi eligendi rerum earum, rem non impedit
+      fugit, enim animi fuga ratione perspiciatis! Pariatur, perferendis
+      voluptate.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta
+      accusamus alias, incidunt atque est quae harum debitis delectus
+      asperiores, nostrum eum temporibus quo ex. Itaque voluptatem ab
+      repudiandae fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Inventore itaque voluptatem atque nam, eveniet quisquam ipsa
+      officiis veniam? Consequatur eius atque natus at soluta culpa
+      necessitatibus maiores non sit recusandae! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odit doloribus omnis harum, ratione
+      voluptates fugiat voluptatum vel eaque molestiae dolorem delectus nobis,
+      odio mollitia autem natus perferendis ab soluta voluptas? Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Nulla, exercitationem itaque
+      culpa ea ab assumenda beatae, ipsam sequi eveniet veritatis consectetur
+      fugiat repellendus distinctio, dolorum aspernatur incidunt eos porro
+      laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. A id
+      maiores laborum quasi minus, modi eligendi rerum earum, rem non impedit
+      fugit, enim animi fuga ratione perspiciatis! Pariatur, perferendis
+      voluptate.
+    </p>
+  </body>
+</html>
